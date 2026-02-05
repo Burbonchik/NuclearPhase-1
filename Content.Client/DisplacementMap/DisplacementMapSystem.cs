@@ -80,7 +80,7 @@ public sealed class DisplacementMapSystem : EntitySystem
 
         // This previously assigned a string reading "this is impossible" if key.ToString eval'd to false.
         // However, for the sake of sanity, we've changed this to assert non-null - !.
-        // If this throws an error, we're not sorry. Nanotrasen thanks you for your service fixing this bug.
+        // If this throws an error, we're not sorry. REDACTED thanks you for your service fixing this bug.
         displacementLayer.CopyToShaderParameters!.LayerKey = key.ToString()!;
 
         _sprite.AddLayer(sprite.AsNullable(), displacementLayer, index);
