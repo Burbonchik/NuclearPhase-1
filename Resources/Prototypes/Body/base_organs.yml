@@ -2,6 +2,14 @@
   id: None
   onlyGroupWhitelisted: true
 
+# NC_WARN
+# Комментарий от Burbonchik:
+# Нужно в будущем решить, выносить ли наш код от сюда куда либо и
+# в целом решить *ВСЕ* будущие проблемы с перезаписыванием и тд.
+# Иначе мы под угрозой ужастного захломления билда, а это нам не надо.
+# Я выпущу ПР в нынешнем виде и когда займусь правками спрайтов хуманов,
+# дойду и до этого вопроса.
+
 - type: markingsGroup
   id: Undergarments
   limits:
@@ -31,11 +39,14 @@
   - type: Organ
     category: Torso
   - type: Sprite
-    state: torso
+    state: torso_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.Chest
     data:
-      state: torso
+      state: torso_m
+    sexStateOverrides:
+      Male: torso_m
+      Female: torso_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -55,11 +66,14 @@
   - type: Organ
     category: Head
   - type: Sprite
-    state: head
+    state: head_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.Head
     data:
-      state: head
+      state: head_m
+    sexStateOverrides:
+      Male: head_m
+      Female: head_f
   - type: VisualOrganMarkings
     hideableLayers:
     - enum.HumanoidVisualLayers.Hair
@@ -82,11 +96,14 @@
   - type: Organ
     category: ArmLeft
   - type: Sprite
-    state: l_arm
+    state: l_arm_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.LArm
     data:
-      state: l_arm
+      state: l_arm_m
+    sexStateOverrides:
+      Male: l_arm_m
+      Female: l_arm_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -101,11 +118,14 @@
   - type: Organ
     category: ArmRight
   - type: Sprite
-    state: r_arm
+    state: r_arm_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.RArm
     data:
-      state: r_arm
+      state: r_arm_m
+    sexStateOverrides:
+      Male: r_arm_m
+      Female: r_arm_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -124,11 +144,14 @@
     data:
       location: Left
   - type: Sprite
-    state: l_hand
+    state: l_hand_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.LHand
     data:
-      state: l_hand
+      state: l_hand_m
+    sexStateOverrides:
+      Male: l_hand_m
+      Female: l_hand_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -147,11 +170,14 @@
     data:
       location: Right
   - type: Sprite
-    state: r_hand
+    state: r_hand_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.RHand
     data:
-      state: r_hand
+      state: r_hand_m
+    sexStateOverrides:
+      Male: r_hand_m
+      Female: r_hand_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -166,11 +192,14 @@
   - type: Organ
     category: LegLeft
   - type: Sprite
-    state: l_leg
+    state: l_leg_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.LLeg
     data:
-      state: l_leg
+      state: l_leg_m
+    sexStateOverrides:
+      Male: l_leg_m
+      Female: l_leg_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -185,11 +214,14 @@
   - type: Organ
     category: LegRight
   - type: Sprite
-    state: r_leg
+    state: r_leg_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.RLeg
     data:
-      state: r_leg
+      state: r_leg_m
+    sexStateOverrides:
+      Male: r_leg_m
+      Female: r_leg_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -204,11 +236,14 @@
   - type: Organ
     category: FootLeft
   - type: Sprite
-    state: l_foot
+    state: l_foot_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.LFoot
     data:
-      state: l_foot
+      state: l_foot_m
+    sexStateOverrides:
+      Male: l_foot_m
+      Female: l_foot_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -223,11 +258,14 @@
   - type: Organ
     category: FootRight
   - type: Sprite
-    state: r_foot
+    state: r_foot_m
   - type: VisualOrgan
     layer: enum.HumanoidVisualLayers.RFoot
     data:
-      state: r_foot
+      state: r_foot_m
+    sexStateOverrides:
+      Male: r_foot_m
+      Female: r_foot_f
   - type: VisualOrganMarkings
     markingData:
       layers:
@@ -426,29 +464,3 @@
   components:
   - type: Sprite
     sprite: Mobs/Species/Human/organs.rsi
-
-- type: entity
-  id: OrganBaseHeadSexed
-  abstract: true
-  components:
-  - type: Sprite
-    state: head_m
-  - type: VisualOrgan
-    data:
-      state: head_m
-    sexStateOverrides:
-      Male: head_m
-      Female: head_f
-
-- type: entity
-  id: OrganBaseTorsoSexed
-  abstract: true
-  components:
-  - type: Sprite
-    state: torso_m
-  - type: VisualOrgan
-    data:
-      state: torso_m
-    sexStateOverrides:
-      Male: torso_m
-      Female: torso_f

@@ -37,9 +37,6 @@
   parent: UnsensoredClothingUniformBase
   id: UnsensoredClothingUniformSkirtBase
   components:
-  - type: Clothing
-    slots: [innerclothing]
-    femaleMask: UniformTop
 
 
 - type: entity
