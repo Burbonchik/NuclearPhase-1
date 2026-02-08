@@ -29,6 +29,9 @@
   parent: BaseItem
   components:
   - type: Organ
+  - type: Sprite
+    path: Textures\_NP14\Mobs\Species\Human\parts.psi
+    state: torso_m
 
 - type: entity
   parent: OrganBase
