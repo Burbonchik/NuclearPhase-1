@@ -30,12 +30,6 @@
   parent: BaseStationTile
   name: tiles-steel-floor
   sprite: /Textures/Tiles/steel.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   itemDrop: FloorTileItemSteel
 
 - type: tile
@@ -115,12 +109,6 @@
   parent: BaseStationTile
   name: tiles-steel-floor-mono
   sprite: /Textures/Tiles/steel_mono.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   itemDrop: FloorTileItemSteelMono
 
 - type: tile
@@ -359,12 +347,6 @@
   parent: BaseStationTile
   name: tiles-dark-floor
   sprite: /Textures/Tiles/dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDark
@@ -404,12 +386,6 @@
   parent: BaseStationTile
   name: tiles-dark-floor-diagonal
   sprite: /Textures/Tiles/dark_diagonal.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkDiagonal
@@ -428,12 +404,6 @@
   parent: BaseStationTile
   name: tiles-dark-floor-mono
   sprite: /Textures/Tiles/dark_mono.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkMono
@@ -458,12 +428,6 @@
   parent: BaseStationTile
   name: tiles-dark-floor-herringbone
   sprite: /Textures/Tiles/dark_herringbone.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkHerringbone
