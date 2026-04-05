@@ -22,7 +22,7 @@ public sealed class SolutionContainerVisualsSystem : VisualizerSystem<SolutionCo
         base.Initialize();
         SubscribeLocalEvent<SolutionContainerVisualsComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<SolutionContainerVisualsComponent, GetInhandVisualsEvent>(OnGetHeldVisuals);
-        SubscribeLocalEvent<SolutionContainerVisualsComponent, GetEquipmentVisualsEvent>(OnGetClothingVisuals);
+        SubscribeLocalEvent<SolutionContainerVisualsComponent, GetEquipmentVisualsEvent>( OnGetClothingVisuals);
     }
 
     private void OnMapInit(EntityUid uid, SolutionContainerVisualsComponent component, MapInitEvent args)

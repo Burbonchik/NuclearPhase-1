@@ -1,0 +1,14 @@
+#Hazard Jumpsuit
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase, ClothingUniformRollableBase]
+  id: NP14_ClothingUniformJumpsuitEngineeringHazard
+  name: hazard jumpsuit
+  description: Woven in a grungy, warm orange. Lets others around you know that you really mean business when it comes to work.
+  components:
+  - type: Sprite
+    sprite: _NP14/Clothing/Under/Jumpsuit/NP_Hazard.rsi
+  - type: Clothing
+    sprite: _NP14/Clothing/Under/Jumpsuit/NP_Hazard.rsi
+    sexStateOverrides:
+      Male: [male-equipped-INNERCLOTHING]
+      Female: [female-equipped-INNERCLOTHING]

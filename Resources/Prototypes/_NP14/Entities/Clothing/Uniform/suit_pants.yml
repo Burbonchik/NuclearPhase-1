@@ -1,0 +1,13 @@
+# Black suit pants
+- type: entity
+  parent: ClothingUniformBase
+  id: NP14ClothingUniformJumpsuitDeathSquad
+  name: death squad uniform
+  description: Advanced armored jumpsuit used by special forces in special operations.
+  components:
+  - type: Sprite
+    sprite: _NP14/Clothing/Under/Suits/NP_suit_pants_black.rsi
+  - type: Clothing
+    sprite: _NP14/Clothing/Under/Suits/NP_suit_pants_black.rsi
+
+# Charcoal suit pants

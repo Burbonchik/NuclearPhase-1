@@ -14,3 +14,11 @@ fold-unzip-verb = Unzip
 
 fold-verb-clothing-jacket = Take off jacket
 unfold-verb-clothing-jacket = Put on jacket
+
+# Rollable
+
+rollable-roll-fail = You can't roll sleeves on {$object}.
+rollable-unroll-fail = You can't unroll sleeves on {$object}.
+
+fold-verb-clothing = Roll
+unfold-verb-clothing = Unroll

@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "world"
+        },
+        {
+            "name": "humanoid body-slot_w_uniform",
+            "directions": 4
+        },
+        {
+            "name": "humanoid body-slot_w_uniform-sleeves",
+            "directions": 4
+        },
+        {
+            "name": "humanoid body-slot_l_hand",
+            "directions": 4
+        },
+        {
+            "name": "humanoid body-slot_r_hand",
+            "directions": 4
+        },
+        {
+            "name": "humanoid body-slot_w_uniform-female",
+            "directions": 4
+        },
+        {
+            "name": "humanoid body-slot_w_uniform-sleeves-female",
+            "directions": 4
+        }
+    ]
+}
